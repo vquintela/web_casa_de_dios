@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/logo.png" type="imagenes" rel="shortcurt icon" />
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="sass/normalize.css">
+    <link rel="stylesheet" href="sass/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>La Casa de D10S</title>
+</head>
+<body>
+    <!-- NAVEGACION -->
+    <nav>
+        <div class="menu-btn" id="btn-menu">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="nav-logo">
+            <img src="img/logo.png" class="img-mono" id="img-navegacion" alt="logo">
+        </div>
+        <div class="link" id="nav-navbar">
+            <div class="link-item">
+                <a href="#inicio">Inicio</a>
+            </div>
+            <div class="link-item">
+                <a href="#nosotros">historia</a>
+            </div>
+            <div class="link-item">
+                <a href="#turnos">reservas</a>
+            </div>
+        </div>
+    </nav>
+    <!-- MASTHEAD -->
+    <div class="masthead">
+        <div class="mast-container">
+            <div class="mast-container-logo">
+                <img src="img/logo.png" alt="Casa de D10S">
+                <div class="mast-container-logo-text">
+                    <h2>La Casa de D10S</h2>
+                    <p>La Paternal - ARGENTINA</p>
+                    <button>Vení a conocerla</button>
+                </div>
+            </div>
+            <div class="mast-container-img">
+                
+            </div>
+        </div>
+    </div>
+    <!-- NOSOTROS -->
+    <div class="nosotros">
+        <div class="nosotros-img">
+            <img src="img/4.jpeg" alt="">
+        </div>
+        <div class="nosotros-text">
+            <h3>historia</h3>
+            <p>
+            <strong>Casa de D10S</strong>, la primera casa propia de Diego Armando Maradona y familia (1978 - 1980) en la Ciudad Autónoma de Buenos Aires,
+            en el barrio porteño de La Paternal y a escasos metros del estadio que hoy lleva su nombre de la Asociación Atlética Argentinos Juniors (A.A.A.J),
+            el Club de sus orígenes y en donde dio sus primeros pasos como jugador profesional.
+            </p>
+            <p>
+                El hogar que le dio Argentinos Juniors a Diego para su cumpleaños número 18, fue recuperado por la Junta de Estudios Históricos de los Barrios de La Paternal y Villa General Mitre a través de su presidente, el dr. Alberto Miguel Perez Martin, puesto en valor y reconocido como un lugar Histórico y en Homenaje al mejor futbolista de la historia.
+            </p>
+        </div>
+    </div>
+    <!-- CONTACTO -->
+    <div class="contacto">
+        <form action="">
+            <h3>contacto y reservas</h3>
+            <div class="input-form">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <span id="errorNombre"></span>
+            </div>
+            <div class="input-form">
+                <input type="number" id="celular" placeholder="Celular">
+                <span id="errorTelefono"></span>
+            </div>
+            <div class="input-form">
+                <input type="email" id="correo" placeholder="Correo">
+                <span id="errorEmail"></span>
+            </div>
+            <div class="input-form">
+                <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                <span id="errorComentario"></span>
+            </div>
+            <button>Contactanos</button>
+            <p>* Consultanos por días de visitas y horarios</p>
+        </form>        
+    </div>
+    <!-- FOOTER -->
+    <script src="/js/index.js"></script>
+</body>
+</html>

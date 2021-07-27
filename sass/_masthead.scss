@@ -1,0 +1,60 @@
+.masthead {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .mast-container {
+        position: relative;
+        height: 100%;
+        .mast-container-logo {
+            z-index: 5;
+            background-color: rgba(255, 255, 255, .15);  
+            backdrop-filter: blur(5px);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            img {
+                max-width: 20%;
+            }
+            .mast-container-logo-text {
+                margin-left: 50px;
+                font-family: $font-primary;
+                h2 {
+                    color: $color-primary;
+                    font-size: 3.5rem;
+                    margin: 0;
+                }
+                p {
+                    color: $color-secondary;
+                    font-weight: bolder;
+                    font-size: 1.2rem;
+                }
+                button {
+                    background-color: $color-primary;
+                    color: white;
+                    padding: 10px 35px;
+                    border-style: none;
+                    border-radius: 25px;
+                    transition: background-color 1s;
+                    &:hover {
+                        background-color: white;
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+        .mast-container-img {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/2.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+        }
+    }
+}
