@@ -178,6 +178,7 @@ nav .link-item:hover::after {
   width: 100%;
   height: 100%;
   background-image: url("../img/2.jpeg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
