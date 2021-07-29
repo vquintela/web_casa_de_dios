@@ -118,9 +118,6 @@ nav .link-item:hover::after {
 
 .masthead .mast-container .mast-container-logo {
   z-index: 5;
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,28 +132,46 @@ nav .link-item:hover::after {
   width: 100%;
 }
 
-.masthead .mast-container .mast-container-logo img {
-  max-width: 20%;
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: 1px solid white;
+  -webkit-box-shadow: 2px 10px 30px black;
+          box-shadow: 2px 10px 30px black;
 }
 
-.masthead .mast-container .mast-container-logo .mast-container-logo-text {
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-img {
+  width: 250px;
+}
+
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-img img {
+  max-width: 100%;
+}
+
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text {
   margin-left: 50px;
   font-family: "Exo 2", sans-serif;
+  width: 300px;
 }
 
-.masthead .mast-container .mast-container-logo .mast-container-logo-text h2 {
-  color: red;
-  font-size: 3.5rem;
-  margin: 0;
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text img {
+  width: 300px;
+  margin-bottom: 20px;
 }
 
-.masthead .mast-container .mast-container-logo .mast-container-logo-text p {
-  color: blue;
-  font-weight: bolder;
-  font-size: 1.2rem;
-}
-
-.masthead .mast-container .mast-container-logo .mast-container-logo-text button {
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text button {
   background-color: red;
   color: white;
   padding: 10px 35px;
@@ -166,7 +181,7 @@ nav .link-item:hover::after {
   transition: background-color 1s;
 }
 
-.masthead .mast-container .mast-container-logo .mast-container-logo-text button:hover {
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text button:hover {
   background-color: white;
   color: red;
 }
@@ -177,13 +192,13 @@ nav .link-item:hover::after {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("../img/2.jpeg");
+  background-image: url("../img/10.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) blur(3px);
+          filter: grayscale(100%) blur(3px);
 }
 
 .nosotros {
@@ -269,7 +284,7 @@ nav .link-item:hover::after {
   width: 350px;
   height: 550px;
   border-radius: 0 50px 50px 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   display: -webkit-box;
@@ -287,7 +302,7 @@ nav .link-item:hover::after {
 .contacto form h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: white;
+  color: red;
 }
 
 .contacto form button {
@@ -320,19 +335,19 @@ nav .link-item:hover::after {
 }
 
 .contacto form .input-form input::-webkit-input-placeholder, .contacto form .input-form textarea::-webkit-input-placeholder {
-  color: white;
+  color: red;
 }
 
 .contacto form .input-form input:-ms-input-placeholder, .contacto form .input-form textarea:-ms-input-placeholder {
-  color: white;
+  color: red;
 }
 
 .contacto form .input-form input::-ms-input-placeholder, .contacto form .input-form textarea::-ms-input-placeholder {
-  color: white;
+  color: red;
 }
 
 .contacto form .input-form input::placeholder, .contacto form .input-form textarea::placeholder {
-  color: white;
+  color: red;
 }
 
 footer {
@@ -351,28 +366,26 @@ footer .footer-map iframe {
 }
 
 footer .footer-text {
-  font-family: "Exo 2", sans-serif;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-family: "Exo 2", sans-serif;
 }
 
-footer .footer-text h3 {
-  font-size: 2.5rem;
-  margin: 5px 0;
-}
-
-footer .footer-text p {
+footer .footer-text .footer-text-title h3 {
   text-transform: uppercase;
-  margin: 0;
+}
+
+footer .footer-text .footer-text-redes {
+  padding: 20px;
+}
+
+footer .footer-text .footer-text-redes a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-text .footer-text-redes a i {
+  margin: 0 20px;
+  font-size: 2.5rem;
 }
 
 footer .footer-logo {
@@ -389,7 +402,7 @@ footer .footer-logo {
 }
 
 footer .footer-logo img {
-  max-width: 60%;
+  max-width: 50%;
 }
 
 /* BTN-WHATSAPP */
