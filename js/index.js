@@ -116,7 +116,6 @@ document.querySelector('.btn-contacto').addEventListener('click', e => {
 })
 
 const modalEd = () => {
-  // document.getElementById('modal-contacto').style.display = "block";
   let mascara = document.getElementById('lamascara');
   mascara.style.display = "block";
 }

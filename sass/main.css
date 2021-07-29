@@ -239,6 +239,7 @@ nav .link-item:hover::after {
 }
 
 .masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text a {
+  text-decoration: none;
   background-color: red;
   color: white;
   padding: 10px 35px;
