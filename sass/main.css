@@ -228,6 +228,7 @@ nav .link-item:hover::after {
 
 .masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text {
   margin-left: 50px;
+  margin-bottom: 10px;
   font-family: "Exo 2", sans-serif;
   width: 300px;
 }
@@ -237,7 +238,7 @@ nav .link-item:hover::after {
   margin-bottom: 20px;
 }
 
-.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text button {
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text a {
   background-color: red;
   color: white;
   padding: 10px 35px;
@@ -247,7 +248,7 @@ nav .link-item:hover::after {
   transition: background-color 1s;
 }
 
-.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text button:hover {
+.masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text a:hover {
   background-color: white;
   color: red;
 }
@@ -585,5 +586,94 @@ footer .footer-logo img {
 
 .btn-wts img {
   max-width: 100%;
+}
+
+.mascara {
+  display: none;
+  position: fixed;
+  z-index: 50000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mascara .contenido {
+  border-radius: 10px;
+  -webkit-animation: modal 1s;
+          animation: modal 1s;
+  position: fixed;
+  top: 15vh;
+  left: 10vw;
+  right: 10vw;
+  margin: auto;
+  font-family: "Exo 2", sans-serif;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+  max-width: 450px;
+}
+
+.mascara .contenido .modal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mascara .contenido .modal-title h3 {
+  padding-left: 10px;
+}
+
+.mascara .contenido .modal-title img {
+  max-width: 10%;
+}
+
+.mascara .contenido .modal-body p {
+  font-size: 1.2rem;
+}
+
+.mascara .contenido .modal-footer h3 {
+  text-align: center;
+}
+
+.mascara .contenido button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  font-family: "Exo 2", sans-serif;
+  padding: 8px 35px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.mascara .contenido button:hover {
+  background-color: white;
+  color: red;
+}
+
+@-webkit-keyframes modal {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+}
+
+@keyframes modal {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
 }
 /*# sourceMappingURL=main.css.map */
