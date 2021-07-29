@@ -40,3 +40,54 @@ footer {
         }
     }
 }
+
+@media screen and (max-width:850px){
+    footer {
+        .footer-logo {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        .footer-map {
+            iframe {
+                height: 300px;
+            }
+        }
+        .footer-text {
+            margin-left: 30px;
+            .footer-text-title {
+                h3 {
+                    text-transform: uppercase;
+                }
+            }
+            .footer-text-redes {
+                padding: 20px;
+            }
+        }
+        .footer-logo {
+            img {
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    footer {
+        .footer-text {
+            margin-left: 10px;
+        }
+        .footer-logo {
+            img {
+                max-width: 80%;
+            }
+        }
+    }
+}

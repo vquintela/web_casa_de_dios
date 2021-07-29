@@ -104,6 +104,73 @@ nav .link-item:hover::after {
           transform: translateX(0);
 }
 
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+  nav {
+    display: block;
+    text-align: start;
+  }
+  nav .nav-logo {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .link {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: block;
+    width: 50%;
+    height: 100vh;
+    margin-left: 0;
+    padding-top: 2px;
+    border-right: 1px solid red;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  nav .link-item {
+    width: 70%;
+    display: block;
+    margin: 20px 50px;
+    border-bottom: 1px solid red;
+  }
+  nav .link-item a {
+    display: block;
+    padding-bottom: 20px;
+  }
+  nav .link-item::before,
+  nav .link-item::after {
+    display: none;
+  }
+  nav .show {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav .texto h1 {
+    font-size: 1.5rem;
+  }
+  nav .texto p {
+    font-size: 0.8rem;
+  }
+  nav .link-item {
+    margin-left: 10px;
+  }
+}
+
 .masthead {
   width: 100%;
   height: 100vh;
@@ -200,6 +267,34 @@ nav .link-item:hover::after {
           filter: grayscale(100%) blur(3px);
 }
 
+@media screen and (max-width: 750px) {
+  .masthead .mast-container .mast-container-logo .mast-container-logo-contenido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .masthead .mast-container .mast-container-logo .mast-container-logo-contenido {
+    padding: 20px;
+  }
+  .masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-img {
+    width: 200px;
+  }
+  .masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text {
+    margin-top: 20px;
+    width: 200px;
+  }
+  .masthead .mast-container .mast-container-logo .mast-container-logo-contenido .mast-container-logo-text img {
+    width: 200px;
+  }
+}
+
 .nosotros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,8 +350,25 @@ nav .link-item:hover::after {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 850px) {
+  .nosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros .nosotros-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .nosotros .nosotros-text {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .contacto {
-  width: 70%;
+  width: 80%;
   margin: 100px auto;
   border-radius: 50px;
   min-height: 550px;
@@ -301,7 +413,6 @@ nav .link-item:hover::after {
 .contacto form h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: red;
 }
 
 .contacto form button {
@@ -329,24 +440,43 @@ nav .link-item:hover::after {
   width: 100%;
   padding: 8px 0;
   border: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid black;
   background-color: transparent;
 }
 
 .contacto form .input-form input::-webkit-input-placeholder, .contacto form .input-form textarea::-webkit-input-placeholder {
-  color: red;
+  color: black;
 }
 
 .contacto form .input-form input:-ms-input-placeholder, .contacto form .input-form textarea:-ms-input-placeholder {
-  color: red;
+  color: black;
 }
 
 .contacto form .input-form input::-ms-input-placeholder, .contacto form .input-form textarea::-ms-input-placeholder {
-  color: red;
+  color: black;
 }
 
 .contacto form .input-form input::placeholder, .contacto form .input-form textarea::placeholder {
-  color: red;
+  color: black;
+}
+
+@media screen and (max-width: 950px) {
+  .contacto {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contacto {
+    min-height: 450px;
+  }
+  .contacto form {
+    padding: 20px;
+    width: 100%;
+    height: 450px;
+    border-radius: 50px;
+  }
 }
 
 footer {
@@ -402,6 +532,44 @@ footer .footer-logo {
 
 footer .footer-logo img {
   max-width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  footer .footer-logo img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  footer .footer-map iframe {
+    height: 300px;
+  }
+  footer .footer-text {
+    margin-left: 30px;
+  }
+  footer .footer-text .footer-text-title h3 {
+    text-transform: uppercase;
+  }
+  footer .footer-text .footer-text-redes {
+    padding: 20px;
+  }
+  footer .footer-logo img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer .footer-text {
+    margin-left: 10px;
+  }
+  footer .footer-logo img {
+    max-width: 80%;
+  }
 }
 
 /* BTN-WHATSAPP */

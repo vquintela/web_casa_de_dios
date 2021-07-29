@@ -1,5 +1,5 @@
 .contacto {
-    width: 70%;
+    width: 80%;
     margin: 100px auto;
     border-radius: 50px;
     min-height: 550px;
@@ -25,7 +25,6 @@
         h3 {
             text-transform: uppercase;
             font-size: 1.5rem;
-            color: $color-primary;
         }
         button {
             width: 200px;
@@ -47,12 +46,31 @@
                 width: 100%;
                 padding: 8px 0;
                 border: none;
-                border-bottom: 1px solid $color-primary;
+                border-bottom: 1px solid black;
                 background-color: transparent;
                 &::placeholder {
-                    color: $color-primary;
+                    color: black;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:950px){
+    .contacto {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width:550px){
+    .contacto {
+        min-height: 450px;
+        form {
+            padding: 20px;
+            width: 100%;
+            height: 450px;
+            border-radius: 50px;
         }
     }
 }

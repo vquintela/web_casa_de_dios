@@ -65,3 +65,39 @@
         }
     }
 }
+
+@media screen and (max-width:750px){
+    .masthead {
+        .mast-container {
+            .mast-container-logo {
+                .mast-container-logo-contenido {
+                    flex-direction: column;
+                    .mast-container-logo-text {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:450px){
+    .masthead {
+        .mast-container {
+            .mast-container-logo {
+                .mast-container-logo-contenido {
+                    padding: 20px;
+                    .mast-container-logo-img {
+                        width: 200px;
+                    }
+                    .mast-container-logo-text {
+                        margin-top: 20px;
+                        width: 200px;
+                        img {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

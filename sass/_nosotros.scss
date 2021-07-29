@@ -32,3 +32,17 @@
         }
     }
 }
+
+@media screen and (max-width:850px){
+    .nosotros {
+        flex-direction: column;
+        .nosotros-img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .nosotros-text {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
