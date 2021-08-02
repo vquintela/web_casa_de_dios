@@ -1,6 +1,7 @@
 .nosotros {
     display: flex;
     margin: 0 auto;
+    margin-bottom: 50px;
     width: 90%;
     .nosotros-img {
         width: 40%;
@@ -25,6 +26,7 @@
             font-family: $font-primary;
             font-size: 1.2rem;
             color: $color-primary;
+            text-align: justify;
         }
         h3 {
             font-size: 2rem;

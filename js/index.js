@@ -30,6 +30,35 @@ window.onload = () => {
     })(navigator.userAgent || navigator.vendor || window.opera);
     const aref = document.getElementById('btn-ws')
     check ? aref.setAttribute('href', "https://api.whatsapp.com/send?phone=+5491122903683") : aref.setAttribute('href', "https://web.whatsapp.com/send?phone=+5491122903683")
+
+    // SLIDER
+    const imgs = document.querySelectorAll('.slideImg');
+    const text = document.querySelectorAll('.texto-slider');
+    imgs.forEach((img, i) => {
+        if (i === 0) {
+            img.classList.add('slideAnimado');
+            text[0].classList.add('texto-slider-show');
+        }
+        img.addEventListener('animationstart', e => {
+            text[i].classList.add('texto-slider-show');
+            e.target.style.zIndex = 2
+            if(i+1 < imgs.length) {
+                imgs[i+1].style.zIndex = 1
+            } else {
+                imgs[0].style.zIndex = 1
+            }
+        });
+        img.addEventListener('animationend', e => {
+            text[i].classList.remove('texto-slider-show');
+            e.target.removeAttribute('style')
+            e.target.classList.remove('slideAnimado')
+            if(i+1 < imgs.length) {
+                imgs[i+1].classList.add('slideAnimado')
+            } else {
+                imgs[0].classList.add('slideAnimado')
+            }
+        });
+    });
 };
 
 // LOGICA FORM CONTACTO
